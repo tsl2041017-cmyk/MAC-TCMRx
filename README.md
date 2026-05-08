@@ -15,9 +15,9 @@ MAC-TCMRx 是一个基于 **FastGPT** 低代码平台构建的多智能体协同
 | 抓主证智能体提示模板 | `/prompts/main_symptom_agent_prompt.txt` |
 | 处方智能体杂合以治模块提示模板 | `/prompts/ipa_agent_prompt.txt` |
 | 可视化追溯智能体提示模板 | `/prompts/vta_agent_prompt.txt` |
-| 病历示例 1 | `/examples/case_001.json` | 脱敏四诊信息 + 金标准处方 |
-| 病历示例 2 | `/examples/case_002.json` | 同上 |
-| 病历示例 3 | `/examples/case_003.json` | 同上 |
+| 病历示例 1 | `/examples/case_001.txt` | 脱敏四诊信息 + 名医真实处方 |
+| 病历示例 2 | `/examples/case_002.txt` | 同上 |
+| 病历示例 3 | `/examples/case_003.txt` | 同上 |
 | 模型使用网址 | [点击访问](https://your-fastgpt-app-url.com) | 在线体验 MAC-TCMRx 处方生成 |
 
 #### 模型使用网址
@@ -44,8 +44,6 @@ MAC-TCMRx 是一个基于 **FastGPT** 低代码平台构建的多智能体协同
 - **通信协议**：模型上下文协议（MCP）
 
 #### 使用说明（复现或二次开发）
-
-如果您希望在自己的 FastGPT 环境中复现：
 
 1. 部署 FastGPT（私有化或使用云端版）
 2. 导入本仓库 `/prompts/` 下的提示模板到对应智能体节点
