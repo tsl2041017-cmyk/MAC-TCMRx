@@ -1,12 +1,12 @@
 # MAC-TCMRx
 
 #### 介绍
-MAC-TCMRx 是一个基于 **FastGPT** 低代码平台构建的多智能体协同中医处方生成模型，面向痹证（Bi syndrome）的临床辅助决策支持。模型通过“抓主证智能体→多维病机分析智能体→处方生成智能体→可视化追溯智能体”的协同工作，完整复现名老中医“抓主证→析病机→定处方”的临床决策链，并生成可视化的 Mermaid 流程图与解释性报告，使推理过程透明、可追溯、可解释。
+MAC-TCMRx 是一个多智能体协同的可解释中医处方生成模型，面向痹证的临床辅助决策支持。模型通过“抓主证智能体→多维病机分析智能体→处方生成智能体→可视化追溯智能体”的协同工作，完整复现名老中医“抓主证→析病机→定处方”的临床决策链，并生成可视化流程图与解释性报告，使推理过程透明、可追溯、可解释。
 
 本仓库公开了模型的核心资产：
+- **模型在线使用网址**（应用链接）
 - **提示模板**（各智能体的结构化提示词，位于 `/prompts/`）
 - **脱敏病历示例**（JSON 格式，位于 `/examples/`）
-- **模型在线使用网址**（FastGPT 应用链接）
 
 #### 已上传核心资产
 
@@ -18,7 +18,7 @@ MAC-TCMRx 是一个基于 **FastGPT** 低代码平台构建的多智能体协同
 | 病历示例 1 | `/examples/case_001.json` | 脱敏四诊信息 + 金标准处方 |
 | 病历示例 2 | `/examples/case_002.json` | 同上 |
 | 病历示例 3 | `/examples/case_003.json` | 同上 |
-| 模型使用网址 | [点击访问](https://your-fastgpt-app-url.com) | 在线体验 MAC-TCMRx 处方生成 |
+| 模型使用网址 | [点击访问](https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc) | 在线体验 MAC-TCMRx 处方生成 |
 
 #### 模型使用网址
 
@@ -30,12 +30,11 @@ MAC-TCMRx 是一个基于 **FastGPT** 低代码平台构建的多智能体协同
 - 可视化决策路径流程图（Mermaid）
 - 自然语言解释报告
 
-👉 **[https://your-fastgpt-app-url.com](https://your-fastgpt-app-url.com)**
+👉 **[https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc](https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc)**
 
 #### 软件架构（FastGPT 实现）
 
-- **平台**：FastGPT（低代码 LLM 应用编排平台）
-- **基座模型**：Qwen2.5-72B（OpenAI 兼容 API）
+- **基座模型**：Qwen2.5-72B
 - **智能体与工作流**：
   - 抓主证智能体：使用 `/prompts/main_symptom_agent_prompt.txt` 提取结构化主证集
   - 多维病机分析智能体：调用规则引擎（8 个推理节点）按序推导病机
