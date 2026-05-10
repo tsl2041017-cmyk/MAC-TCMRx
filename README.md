@@ -18,7 +18,7 @@ MAC-TCMRx 是一个多智能体协同的可解释中医处方生成模型，面�
 | 病历示例 1 | `/examples/case_001.txt` | 脱敏四诊信息 + 名医真实处方 |
 | 病历示例 2 | `/examples/case_002.txt` | 同上 |
 | 病历示例 3 | `/examples/case_003.txt` | 同上 |
-| 模型使用网址 | [点击访问](https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc) | 在线体验 MAC-TCMRx 处方生成 |
+| 模型使用网址 | [点击访问](http://82.157.37.140:7300/chat/share?shareId=kCfWdm1yKh3ilRnEVkosSfji) | 在线体验 MAC-TCMRx 处方生成 |
 
 #### 模型使用网址
 
@@ -30,7 +30,7 @@ MAC-TCMRx 是一个多智能体协同的可解释中医处方生成模型，面�
 - 可视化决策路径流程图（Mermaid）
 - 自然语言解释报告
 
-👉 **[https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc](https://cloud.fastgpt.io/chat/share?shareId=ea10IyTgrVP13oyXQLyRafcc)**
+👉 **[http://82.157.37.140:7300/chat/share?shareId=kCfWdm1yKh3ilRnEVkosSfji](http://82.157.37.140:7300/chat/share?shareId=kCfWdm1yKh3ilRnEVkosSfji)**
 
 #### 软件架构（FastGPT 实现）
 
