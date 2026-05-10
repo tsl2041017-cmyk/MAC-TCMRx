@@ -34,7 +34,7 @@ MAC-TCMRx 是一个多智能体协同的可解释中医处方生成模型，面�
 
 #### 软件架构（FastGPT 实现）
 
-- **平台**：FastGPT（低代码 LLM 应用编排平台）
+- **平台**：FastGPT（LLM 应用编排平台）
 - **基座模型**：Qwen2.5-72B（OpenAI 兼容 API）
 - **智能体与工作流**：
   - 抓主证智能体：使用 `/prompts/main_symptom_agent_prompt.txt` 提取结构化主证集
